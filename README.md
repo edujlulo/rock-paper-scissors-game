@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# rock-paper-scissors-game
+A React-based Rock, Paper, Scissors game where the user plays against the computer. The app tracks scores, displays results instantly, and provides an interactive way to practice React, state management, and basic game logic.
+>>>>>>> 9a098898fb4e5c373b5da0c835b5907ca26a5d50

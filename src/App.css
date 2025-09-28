@@ -1,5 +1,6 @@
 * {
   background-color: rgb(194, 220, 194);
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 
 .App {
@@ -64,6 +65,7 @@
 #human-screen {
   position: relative;
   display: flex;
+  flex-direction: column;
   gap: 10px;
   width: 150px;
   align-items: center;
@@ -73,10 +75,20 @@
 #computer-screen {
   position: relative;
   display: flex;
+  flex-direction: column;
   gap: 10px;
   width: 150px;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
+}
+
+.buttons-box {
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 #score-display {
@@ -86,7 +98,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -124,15 +136,21 @@
 }
 
 .button {
-  background-color: rgb(88, 88, 213);
+  background-color: rgb(80, 80, 134);
   font-size: 30px;
   padding: 20px 20px;
+  margin-top: 90px;
+  font-weight: bold;
 }
 
 .score-text {
   background-color: transparent;
   font-size: 35px;
   font-weight: bold;
+}
+
+#score-human-text {
+  margin-top: 140px;
 }
 
 output {
@@ -145,4 +163,16 @@ output {
   padding: 50px 50px;
   font-size: 60px;
   border: 3px solid black;
+}
+
+.play {
+  background-color: transparent;
+  font-size: 100px;
+  margin-top: 70px;
+}
+
+.result {
+  background-color: transparent;
+  font-size: 100px;
+  margin-top: 70px;
 }

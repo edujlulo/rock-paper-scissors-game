@@ -1,4 +1,6 @@
-<<<<<<< HEAD
+# rock-paper-scissors-game
+A React-based Rock, Paper, Scissors game where the user plays against the computer. The app tracks scores, displays results instantly, and provides an interactive way to practice React, state management, and basic game logic.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

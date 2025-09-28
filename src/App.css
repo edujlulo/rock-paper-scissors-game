@@ -55,11 +55,55 @@
 }
 
 .screen {
-  background-color: blue;
-  padding: 300px 100px;
+  background-color: rgb(177, 206, 219);
+  padding: 300px 150px;
+  border: 4px solid black;
+}
+
+#human-screen {
+  position: relative;
+}
+
+#computer-screen {
+  position: relative;
 }
 
 #score-display {
-  background-color: orange;
-  padding: 300px 60px;
+  background-color: rgb(169, 149, 111);
+  padding: 300px 100px;
+  border: 4px solid black;
+  position: relative;
+}
+
+#human-title {
+  background-color: rgb(55, 92, 157);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 8px 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#computer-title {
+  background-color: rgb(55, 92, 157);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 8px 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#score-title {
+  background-color: rgb(88, 83, 80);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 8px 0;
+  font-size: 30px;
+  font-weight: bold;
 }

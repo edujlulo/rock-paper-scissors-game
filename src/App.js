@@ -1,7 +1,10 @@
 import logo from "./logo.svg";
+import { useState } from "react";
 import "./App.css";
 
 function App() {
+  const [humanScore, setHumanScore] = useState(0);
+  const [computerScore, setComputerScore] = useState(0);
   return (
     <div className="App">
       <header className="App-header">
@@ -17,10 +20,10 @@ function App() {
         </div>
         <div id="score-display">
           <div id="score-title">Score</div>
-          <p>Human</p>
-          <input></input>
-          <p>Computer</p>
-          <input></input>
+          <p class="score-text">Human</p>
+          <output>{humanScore}</output>
+          <p class="score-text">Computer</p>
+          <output>{computerScore}</output>
         </div>
         <div className="screen" id="computer-screen">
           <div id="computer-title">Computer</div>

@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import { useState } from "react";
 import "./App.css";
+import Counter from "./Counter";
 
 function App() {
   const [humanScore, setHumanScore] = useState(0);
@@ -85,6 +86,7 @@ function App() {
           <div className="result">{resultComputer}</div>
         </div>
       </div>
+      <Counter />
     </div>
   );
 }

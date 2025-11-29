@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import { useState } from "react";
 import "./App.css";
-import Lista from "./Practice.js";
+// import List from "./Practice.js";
 
 function App() {
   const [humanScore, setHumanScore] = useState(0);
@@ -86,7 +86,7 @@ function App() {
           <div className="result">{resultComputer}</div>
         </div>
       </div>
-      <Lista />
+      {/* <List /> */}
     </div>
   );
 }

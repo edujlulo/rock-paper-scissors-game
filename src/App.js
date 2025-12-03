@@ -86,7 +86,7 @@ function App() {
           <div className="result">{resultComputer}</div>
         </div>
       </div>
-      <List />
+      {/* <List /> */}
     </div>
   );
 }

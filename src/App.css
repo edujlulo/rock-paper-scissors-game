@@ -1,6 +1,9 @@
+html {
+  font-size: 6px;
+}
+
 * {
   background-color: rgb(194, 220, 194);
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 
 .App {
@@ -8,7 +11,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 40rem;
   pointer-events: none;
 }
 
@@ -20,10 +23,10 @@
 
 .App-header {
   color: rgb(27, 24, 24);
-  padding: 30px 100px;
-  max-width: 500px;
+  padding: 3.75rem 12.5rem;
+  max-width: 62.5rem;
   margin: 0 auto;
-  font-size: 50px;
+  font-size: 6.25rem;
   font-weight: bold;
 }
 
@@ -32,7 +35,7 @@
 }
 
 #made-by-text {
-  font-size: 35px;
+  font-size: 4.375rem;
 }
 
 .App-link {
@@ -51,33 +54,24 @@
 #board {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  margin-bottom: 40px;
-  height: 800px;
+  gap: 2.5rem;
+  margin-bottom: 5rem;
+  height: 100rem;
 }
 
 .screen {
   background-color: rgb(177, 206, 219);
-  border: 4px solid black;
-  flex: 0 0 450px;
+  border: 0.5rem solid black;
+  flex: 0 0 56.25rem;
 }
 
-#human-screen {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 150px;
-  align-items: center;
-  justify-content: flex-start;
-}
-
+#human-screen,
 #computer-screen {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  width: 150px;
+  gap: 1.25rem;
+  width: 18.75rem;
   align-items: center;
   justify-content: flex-start;
 }
@@ -86,15 +80,15 @@
   background-color: transparent;
   position: relative;
   display: flex;
-  gap: 10px;
+  gap: 1.25rem;
   align-items: flex-start;
   justify-content: center;
 }
 
 #score-display {
   background-color: rgb(169, 149, 111);
-  flex: 0 0 300px;
-  border: 4px solid black;
+  flex: 0 0 37.5rem;
+  border: 0.5rem solid black;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -102,55 +96,43 @@
   align-items: center;
 }
 
-#human-title {
-  background-color: rgb(55, 92, 157);
+#human-title,
+#computer-title,
+#score-title {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  padding: 8px 0;
-  font-size: 30px;
+  padding: 1rem 0;
+  font-size: 3.75rem;
   font-weight: bold;
 }
 
+#human-title,
 #computer-title {
   background-color: rgb(55, 92, 157);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 8px 0;
-  font-size: 30px;
-  font-weight: bold;
 }
 
 #score-title {
   background-color: rgb(88, 83, 80);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 8px 0;
-  font-size: 30px;
-  font-weight: bold;
 }
 
 .button {
   background-color: rgb(80, 80, 134);
-  font-size: 30px;
-  padding: 20px 20px;
-  margin-top: 90px;
+  font-size: 3.75rem;
+  padding: 2.5rem 2.5rem;
+  margin-top: 11.25rem;
   font-weight: bold;
 }
 
 .score-text {
   background-color: transparent;
-  font-size: 35px;
+  font-size: 4.375rem;
   font-weight: bold;
 }
 
 #score-human-text {
-  margin-top: 140px;
+  margin-top: 17.5rem;
 }
 
 output {
@@ -158,24 +140,24 @@ output {
   justify-content: center;
   align-items: center;
   background-color: white;
-  height: 120px;
+  height: 15rem;
   box-sizing: border-box;
-  padding: 50px 50px;
-  font-size: 60px;
-  border: 3px solid black;
+  padding: 6.25rem 6.25rem;
+  font-size: 7.5rem;
+  border: 0.375rem solid black;
 }
 
 .play {
   background-color: transparent;
-  font-size: 100px;
-  margin-top: 70px;
+  font-size: 12.5rem;
+  margin-top: 8.75rem;
   font-weight: bold;
 }
 
 .result {
   background-color: transparent;
-  font-size: 130px;
-  margin-top: 70px;
+  font-size: 16.25rem;
+  margin-top: 8.75rem;
   color: rgb(51, 105, 51);
   font-weight: bold;
 }

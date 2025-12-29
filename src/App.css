@@ -34,10 +34,6 @@ html {
   text-decoration: underline;
 }
 
-#made-by-text {
-  font-size: 4.375rem;
-}
-
 .App-link {
   color: #61dafb;
 }
@@ -160,4 +156,20 @@ output {
   margin-top: 8.75rem;
   color: rgb(51, 105, 51);
   font-weight: bold;
+}
+
+#creator {
+  margin-top: 6rem;
+  font-size: 3rem;
+  color: #132020;
+  text-align: center;
+}
+
+#creator a {
+  color: #132020;
+  text-decoration: none;
+}
+
+#creator a:hover {
+  text-decoration: underline;
 }

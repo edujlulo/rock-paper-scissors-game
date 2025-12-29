@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import Footer from "./Components/Footer";
 // import List from "./Practice.js";
 
 function App() {
@@ -46,7 +47,6 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p id="title">Rock, Paper, Scissors</p>
-        <p id="made-by-text">Made by: Eduardo Lulo</p>
       </header>
       <div id="board">
         <div className="screen" id="human-screen">
@@ -86,6 +86,7 @@ function App() {
         </div>
       </div>
       {/* <List /> */}
+      <Footer />
     </div>
   );
 }

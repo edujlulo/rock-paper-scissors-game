@@ -114,11 +114,16 @@ html {
 }
 
 .button {
-  background-color: rgb(80, 80, 134);
+  background-color: transparent;
   font-size: 3.75rem;
-  padding: 2.5rem 2.5rem;
+  padding: 1rem 1rem;
   margin-top: 11.25rem;
   font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #7aacb9;
 }
 
 .score-text {
@@ -172,4 +177,12 @@ output {
 
 #creator a:hover {
   text-decoration: underline;
+}
+
+/* CSS for icons */
+
+.icon {
+  height: 10rem;
+  width: 10rem;
+  background-color: transparent;
 }

@@ -1,7 +1,10 @@
 import { useState } from "react";
 import "./App.css";
 import Footer from "./Components/Footer";
-// import List from "./Practice.js";
+import HandRock from "./Assets/hand-rock.svg";
+import HandPaper from "./Assets/hand-paper.svg";
+import HandScissor from "./Assets/hand-scissor.svg";
+import Board from "./Components/Board";
 
 function App() {
   const [humanScore, setHumanScore] = useState(0);
@@ -14,10 +17,11 @@ function App() {
   const options = ["Rock", "Paper", "Scissor"];
 
   function showPlay(e) {
-    const humanMove = e.target.value;
+    const humanMove = e.currentTarget.value;
+    console.log(humanMove);
     setPlayHuman(humanMove);
 
-    const computerMove = options[Math.floor(Math.random() * options.length)]; // jugada al azar
+    const computerMove = options[Math.floor(Math.random() * options.length)];
     setPlayComputer(computerMove);
     showResult(humanMove, computerMove);
   }
@@ -48,44 +52,18 @@ function App() {
       <header className="App-header">
         <p id="title">Rock, Paper, Scissors</p>
       </header>
-      <div id="board">
-        <div className="screen" id="human-screen">
-          <div id="human-title">Human</div>
-          <div className="buttons-box">
-            <button className="button" value="Rock" onClick={showPlay}>
-              Rock
-            </button>
-            <button className="button" value="Paper" onClick={showPlay}>
-              Paper
-            </button>
-            <button className="button" value="Scissor" onClick={showPlay}>
-              Scissor
-            </button>
-          </div>
-          <div className="play">{playHuman}</div>
-          <div className="result">{resultHuman}</div>
-        </div>
-        <div id="score-display">
-          <div id="score-title">Score</div>
-          <p className="score-text" id="score-human-text">
-            Human
-          </p>
-          <output>{humanScore}</output>
-          <p className="score-text">Computer</p>
-          <output>{computerScore}</output>
-        </div>
-        <div className="screen" id="computer-screen">
-          <div id="computer-title">Computer</div>
-          <div className="buttons-box">
-            <button className="button">Rock</button>
-            <button className="button">Paper</button>
-            <button className="button">Scissor</button>
-          </div>
-          <div className="play">{playComputer}</div>
-          <div className="result">{resultComputer}</div>
-        </div>
-      </div>
-      {/* <List /> */}
+      <Board
+        humanScore={humanScore}
+        computerScore={computerScore}
+        showPlay={showPlay}
+        HandRock={HandRock}
+        HandPaper={HandPaper}
+        HandScissor={HandScissor}
+        playHuman={playHuman}
+        resultHuman={resultHuman}
+        playComputer={playComputer}
+        resultComputer={resultComputer}
+      />
       <Footer />
     </div>
   );

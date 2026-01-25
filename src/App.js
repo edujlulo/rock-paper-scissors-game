@@ -1,49 +1,40 @@
 import { useState } from "react";
 import "./App.css";
 import Footer from "./Components/Footer";
+import Board from "./Components/Board";
+
 import HandRock from "./Assets/hand-rock.svg";
 import HandPaper from "./Assets/hand-paper.svg";
 import HandScissor from "./Assets/hand-scissor.svg";
-import Board from "./Components/Board";
+
+import { getGameResult } from "./Logic/gameLogic";
 
 function App() {
   const [humanScore, setHumanScore] = useState(0);
   const [computerScore, setComputerScore] = useState(0);
-  const [playHuman, setPlayHuman] = useState("");
-  const [playComputer, setPlayComputer] = useState("");
-  const [resultHuman, setResultHuman] = useState("");
-  const [resultComputer, setResultComputer] = useState("");
+  const [humanPlay, setHumanPlay] = useState("");
+  const [computerPlay, setComputerPlay] = useState("");
+  const [result, setResult] = useState("");
 
   const options = ["Rock", "Paper", "Scissor"];
 
-  function showPlay(e) {
+  function handlePlay(e) {
     const humanMove = e.currentTarget.value;
-    console.log(humanMove);
-    setPlayHuman(humanMove);
-
     const computerMove = options[Math.floor(Math.random() * options.length)];
-    setPlayComputer(computerMove);
-    showResult(humanMove, computerMove);
-  }
 
-  function showResult(humanMove, computerMove) {
-    const wins = {
-      Rock: "Scissor",
-      Paper: "Rock",
-      Scissor: "Paper",
-    };
+    const winner = getGameResult(humanMove, computerMove);
 
-    if (humanMove === computerMove) {
-      setResultHuman("TIE");
-      setResultComputer("TIE");
-    } else if (wins[humanMove] === computerMove) {
-      setResultHuman("WIN");
-      setResultComputer("");
-      setHumanScore(humanScore + 1);
+    setHumanPlay(humanMove);
+    setComputerPlay(computerMove);
+
+    if (winner === "human") {
+      setHumanScore((prev) => prev + 1);
+      setResult("HUMAN");
+    } else if (winner === "computer") {
+      setComputerScore((prev) => prev + 1);
+      setResult("COMPUTER");
     } else {
-      setResultHuman("");
-      setResultComputer("WIN");
-      setComputerScore(computerScore + 1);
+      setResult("TIE");
     }
   }
 
@@ -52,18 +43,19 @@ function App() {
       <header className="App-header">
         <p id="title">Rock, Paper, Scissors</p>
       </header>
+
       <Board
         humanScore={humanScore}
         computerScore={computerScore}
-        showPlay={showPlay}
+        humanPlay={humanPlay}
+        computerPlay={computerPlay}
+        result={result}
+        onPlay={handlePlay}
         HandRock={HandRock}
         HandPaper={HandPaper}
         HandScissor={HandScissor}
-        playHuman={playHuman}
-        resultHuman={resultHuman}
-        playComputer={playComputer}
-        resultComputer={resultComputer}
       />
+
       <Footer />
     </div>
   );

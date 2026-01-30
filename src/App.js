@@ -39,25 +39,45 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <p id="title">Rock, Paper, Scissors</p>
-      </header>
+    <>
+      <div className="App">
+        <div className="content">
+          <header className="App-header">
+            <p id="title">Rock, Paper, Scissors Game</p>
+          </header>
 
-      <Board
-        humanScore={humanScore}
-        computerScore={computerScore}
-        humanPlay={humanPlay}
-        computerPlay={computerPlay}
-        result={result}
-        onPlay={handlePlay}
-        HandRock={HandRock}
-        HandPaper={HandPaper}
-        HandScissor={HandScissor}
-      />
+          <p className="text-to-play">Choose an option to play:</p>
 
-      <Footer />
-    </div>
+          <div className="buttons-box">
+            <button className="button" value="Rock" onClick={handlePlay}>
+              <img src={HandRock} alt="Rock" className="icon" />
+            </button>
+            <button className="button" value="Paper" onClick={handlePlay}>
+              <img src={HandPaper} alt="Paper" className="icon" />
+            </button>
+            <button className="button" value="Scissor" onClick={handlePlay}>
+              <img src={HandScissor} alt="Scissor" className="icon" />
+            </button>
+          </div>
+
+          <Board
+            humanScore={humanScore}
+            computerScore={computerScore}
+            humanPlay={humanPlay}
+            computerPlay={computerPlay}
+            result={result}
+            HandRock={HandRock}
+            handImages={{
+              Rock: HandRock,
+              Paper: HandPaper,
+              Scissor: HandScissor,
+            }}
+          />
+        </div>
+
+        <Footer />
+      </div>
+    </>
   );
 }
 

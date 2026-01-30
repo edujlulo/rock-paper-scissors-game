@@ -1,0 +1,99 @@
+#board {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  height: 24rem;
+}
+
+.screen {
+  background-color: rgb(177, 206, 219);
+  border: 0.15rem solid black;
+  flex: 0 0 16.875rem;
+}
+
+#human-screen,
+#computer-screen {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  width: 5.625rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.play {
+  background-color: transparent;
+  font-size: 3.75rem;
+  margin-top: 2.625rem;
+  font-weight: bold;
+}
+
+.result {
+  background-color: transparent;
+  font-size: 4.875rem;
+  margin-top: 0.9rem;
+  color: rgb(51, 105, 51);
+  font-weight: bold;
+}
+
+#score-display {
+  background-color: rgb(169, 149, 111);
+  flex: 0 0 11.25rem;
+  border: 0.15rem solid black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#human-title,
+#computer-title,
+#score-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.3rem 0;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+#human-title,
+#computer-title {
+  background-color: rgb(55, 92, 157);
+}
+
+#score-title {
+  background-color: rgb(88, 83, 80);
+}
+
+.score-text {
+  background-color: transparent;
+  font-size: 1.3125rem;
+  font-weight: bold;
+}
+
+#score-human-text {
+  margin-top: 2.7rem;
+}
+
+/* Icons */
+
+#icon-human-play {
+  width: 7.5rem;
+  height: auto;
+  max-width: none;
+  margin-top: 2.4rem;
+  transform: scaleX(-1) rotate(-90deg);
+}
+
+#icon-computer-play {
+  width: 7.5rem;
+  height: auto;
+  max-width: none;
+  margin-top: 2.4rem;
+  transform: rotate(-90deg);
+}

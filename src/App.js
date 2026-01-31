@@ -46,7 +46,7 @@ function App() {
             <p id="title">Rock, Paper, Scissors Game</p>
           </header>
 
-          <p className="text-to-play">Choose an option to play:</p>
+          <p className="text-to-play">Choose your move</p>
 
           <div className="buttons-box">
             <button className="button" value="Rock" onClick={handlePlay}>

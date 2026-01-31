@@ -7,8 +7,10 @@
 }
 
 .screen {
-  background-color: rgb(177, 206, 219);
-  border: 0.15rem solid black;
+  background-color: #dbeafe;
+  border: none;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+
   flex: 0 0 16.875rem;
 }
 
@@ -21,59 +23,95 @@
   width: 5.625rem;
   align-items: center;
   justify-content: flex-start;
+  border-radius: 0.5rem;
+}
+
+output {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8fafc;
+  height: 4.5rem;
+  box-sizing: border-box;
+  padding: 1.875rem;
+  font-size: 2.25rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  border: none;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .play {
   background-color: transparent;
   font-size: 3.75rem;
   margin-top: 2.625rem;
-  font-weight: bold;
+  font-weight: 600;
+  letter-spacing: 0.03em;
 }
 
 .result {
   background-color: transparent;
   font-size: 4.875rem;
   margin-top: 0.9rem;
-  color: rgb(51, 105, 51);
-  font-weight: bold;
+  color: #15803d;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.result.win {
+  color: #15803d;
+}
+
+.result.tie {
+  color: #475569;
+}
+
+.result.lose {
+  color: #b91c1c;
 }
 
 #score-display {
-  background-color: rgb(169, 149, 111);
+  background-color: #cbd5e1;
   flex: 0 0 11.25rem;
-  border: 0.15rem solid black;
+  border: none;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  border-radius: 0.5rem;
 }
 
 #human-title,
 #computer-title,
 #score-title {
+  color: white;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   padding: 0.3rem 0;
   font-size: 1.125rem;
-  font-weight: bold;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  border-radius: 0.35rem 0.35rem 0 0;
 }
 
 #human-title,
 #computer-title {
-  background-color: rgb(55, 92, 157);
+  background-color: #1f2937;
 }
 
 #score-title {
-  background-color: rgb(88, 83, 80);
+  background-color: #1f2937;
 }
 
 .score-text {
   background-color: transparent;
   font-size: 1.3125rem;
-  font-weight: bold;
+  font-weight: 600;
+  letter-spacing: 0.03em;
 }
 
 #score-human-text {

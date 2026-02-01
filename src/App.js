@@ -42,22 +42,24 @@ function App() {
     <>
       <div className="App">
         <div className="content">
-          <header className="App-header">
-            <p id="title">Rock, Paper, Scissors Game</p>
-          </header>
+          <div>
+            <header className="App-header">
+              <p id="title">Rock, Paper, Scissors Game</p>
+            </header>
 
-          <p className="text-to-play">Choose your move</p>
+            <p className="text-to-play">Choose your move</p>
 
-          <div className="buttons-box">
-            <button className="button" value="Rock" onClick={handlePlay}>
-              <img src={HandRock} alt="Rock" className="icon" />
-            </button>
-            <button className="button" value="Paper" onClick={handlePlay}>
-              <img src={HandPaper} alt="Paper" className="icon" />
-            </button>
-            <button className="button" value="Scissor" onClick={handlePlay}>
-              <img src={HandScissor} alt="Scissor" className="icon" />
-            </button>
+            <div className="buttons-box">
+              <button className="button" value="Rock" onClick={handlePlay}>
+                <img src={HandRock} alt="Rock" className="icon" />
+              </button>
+              <button className="button" value="Paper" onClick={handlePlay}>
+                <img src={HandPaper} alt="Paper" className="icon" />
+              </button>
+              <button className="button" value="Scissor" onClick={handlePlay}>
+                <img src={HandScissor} alt="Scissor" className="icon" />
+              </button>
+            </div>
           </div>
 
           <Board

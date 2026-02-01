@@ -1,5 +1,6 @@
 #board {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 0.75rem;
   margin-bottom: 1.5rem;
@@ -134,4 +135,11 @@ output {
   max-width: none;
   margin-top: 2.4rem;
   transform: rotate(-90deg);
+}
+
+@media (min-width: 550px) {
+  #board {
+    display: flex;
+    flex-direction: row;
+  }
 }

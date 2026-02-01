@@ -18,6 +18,11 @@ body {
   pointer-events: none;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
 .App-header {
   color: #1f2937;
   padding: 1.125rem 3.75rem;

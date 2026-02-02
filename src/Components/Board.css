@@ -13,9 +13,9 @@
 .screen {
   background-color: #dbeafe;
   width: 80vw;
-  max-width: 14rem;
+  max-width: 16rem;
   min-width: 12rem;
-  height: 20vh;
+  height: 22vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,7 +48,7 @@
 
 #icon-human-play,
 #icon-computer-play {
-  width: 4rem;
+  width: 5rem;
   height: auto;
 }
 
@@ -62,12 +62,28 @@
 
 /* Result */
 .result {
-  height: 2.5rem; /* fijo para WIN/TIE */
+  height: 2.5rem;
   font-size: 1.8rem;
   font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2vh;
+}
+
+.result.win {
+  color: #15803d;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.result.tie {
+  color: #d97706;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.result.loss {
+  color: #b91c1c;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* Scoreboard */
@@ -75,7 +91,7 @@
   background-color: #cbd5e1;
   width: 80vw;
   height: 15vh;
-  max-width: 14rem;
+  max-width: 16rem;
   min-width: 12rem;
   display: flex;
   flex-direction: column;
@@ -90,7 +106,7 @@
   align-items: center;
   width: 100%;
   flex: 1;
-  margin-bottom: 10vh;
+  margin-bottom: 3vh;
 }
 
 .score-item {
@@ -107,9 +123,9 @@
 
 output {
   background-color: #f8fafc;
-  width: 3rem;
-  height: 3rem;
-  font-size: 1.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  font-size: 1.75rem;
   font-weight: 600;
   border-radius: 0.5rem;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -153,18 +169,21 @@ output {
     flex-direction: row;
     gap: 1rem;
     justify-content: center;
+    padding: 0 1.5rem;
+    margin-top: 4vh;
   }
   .screen,
   #score-display {
     max-width: 18rem;
-    height: 20vh;
+    height: 28vh;
   }
   #icon-human-play,
   #icon-computer-play {
     width: 6rem;
   }
   .result {
-    font-size: 2.25rem;
+    font-size: 3rem;
+    margin-bottom: 3vh;
   }
   output {
     width: 4rem;

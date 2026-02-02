@@ -13,13 +13,13 @@ export default function Board({
     result === "HUMAN"
       ? "WIN"
       : result === "COMPUTER"
-        ? ""
+        ? "LOSS"
         : result === "TIE"
           ? "TIE"
           : "";
   const showResultComputer =
     result === "HUMAN"
-      ? ""
+      ? "LOSS"
       : result === "COMPUTER"
         ? "WIN"
         : result === "TIE"
@@ -43,7 +43,9 @@ export default function Board({
             id="icon-human-play"
           />
         </div>
-        <div className="result">{showResultHuman}</div>
+        <div className={`result ${showResultHuman.toLowerCase()}`}>
+          {showResultHuman}
+        </div>
       </div>
 
       {/* Scoreboard */}
@@ -72,7 +74,9 @@ export default function Board({
             id="icon-computer-play"
           />
         </div>
-        <div className="result">{showResultComputer}</div>
+        <div className={`result ${showResultComputer.toLowerCase()}`}>
+          {showResultComputer}
+        </div>
       </div>
     </div>
   );

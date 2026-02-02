@@ -49,12 +49,16 @@ export default function Board({
       {/* Scoreboard */}
       <div id="score-display">
         <div id="score-title">Score</div>
-        <p id="score-human-text" className="score-text">
-          Human
-        </p>
-        <output>{humanScore}</output>
-        <p className="score-text">Computer</p>
-        <output>{computerScore}</output>
+        <div id="score-values">
+          <div className="score-item">
+            <p className="score-text">Human</p>
+            <output>{humanScore}</output>
+          </div>
+          <div className="score-item">
+            <p className="score-text">Computer</p>
+            <output>{computerScore}</output>
+          </div>
+        </div>
       </div>
 
       {/* Computer Screen */}

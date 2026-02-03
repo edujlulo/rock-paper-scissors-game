@@ -46,6 +46,7 @@ You can try the live demo here: [Eduardo Lulo Portfolio](https://eduardo-lulo-po
 
 ## Project Structure
 
+```text
 src/
 ├── Assets/
 │ ├── hand-rock.svg
@@ -61,6 +62,7 @@ src/
 ├── App.jsx
 ├── App.css
 └── index.js
+```
 
 **Component Breakdown:**
 
@@ -87,21 +89,28 @@ src/
 
 ```bash
 git clone https://github.com/your-username/rock-paper-scissors.git
+```
 
 Navigate to the project folder:
 
+```bash
 cd rock-paper-scissors
+```
 
 Install dependencies:
 
+```bash
 npm install
+```
 
 Run the project locally:
 
+```bash
 npm start
+```
 
 Open http://localhost:3000 in your browser to play.
-```
+
 
 Author
 

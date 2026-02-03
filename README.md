@@ -114,6 +114,6 @@ Open http://localhost:3000 in your browser to play.
 
 ## Author
 
-Eduardo Lulo – Portfolio
+Eduardo Lulo – [Portfolio](https://eduardo-lulo-portfolio.netlify.app)
 
 This project demonstrates my abilities in React, JavaScript, and responsive frontend development, and serves as a showcase for potential employers in a junior frontend developer role.

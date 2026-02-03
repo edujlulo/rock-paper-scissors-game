@@ -1,77 +1,110 @@
-# rock-paper-scissors-game
-A React-based Rock, Paper, Scissors game where the user plays against the computer. The app tracks scores, displays results instantly, and provides an interactive way to practice React, state management, and basic game logic.
+# Rock, Paper, Scissors Game 🎮✊📄✂️
 
-# Getting Started with Create React App
+A simple and interactive **Rock, Paper, Scissors** game built with **React**. This project showcases my skills in **React**, **state management**, **component-based architecture**, and **responsive design**, making it a strong example of my frontend development abilities.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Demo](#demo)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Project Structure](#project-structure)
+- [How to Play](#how-to-play)
+- [Installation](#installation)
+- [Future Improvements](#future-improvements)
+- [Author](#author)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+You can try the live demo here: [Eduardo Lulo Portfolio](https://eduardo-lulo-portfolio.netlify.app)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+- **Interactive Gameplay:** Play against the computer with instant results.
+- **Score Tracking:** Human and computer scores are displayed and updated in real time.
+- **Responsive Design:** Optimized for mobile, tablet, and desktop screens using CSS Flexbox and media queries.
+- **Visual Feedback:** Icons for Rock, Paper, and Scissors, with animations and color-coded results (Win / Loss / Tie).
+- **Component-Based Architecture:** Clean separation of concerns with `Board`, `Footer`, and main `App` components.
+- **Reusable Logic:** Game logic encapsulated in a separate utility function for maintainability.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **React** – Functional components and hooks (`useState`)
+- **JavaScript** – Game logic and event handling
+- **CSS3** – Flexbox, responsive design, and styling
+- **SVG Icons** – Hand icons for Rock, Paper, and Scissors
+- **Vite / Create React App** – For project setup (depending on setup)
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+src/
+├── Assets/
+│ ├── hand-rock.svg
+│ ├── hand-paper.svg
+│ └── hand-scissor.svg
+├── Components/
+│ ├── Board.jsx
+│ ├── Board.css
+│ ├── Footer.jsx
+│ └── Footer.css
+├── Logic/
+│ └── gameLogic.js
+├── App.jsx
+├── App.css
+└── index.js
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Component Breakdown:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- `App.jsx`: Main component that manages state (`humanScore`, `computerScore`, `humanPlay`, `computerPlay`, `result`) and handles user interactions.
+- `Board.jsx`: Displays the current game state, player and computer moves, and the scoreboard.
+- `Footer.jsx`: Simple footer with author information and a portfolio link.
+- `gameLogic.js`: Contains the game logic function `getGameResult()` to determine the winner.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## How to Play
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Choose a move by clicking on **Rock**, **Paper**, or **Scissors**.
+2. The computer will randomly choose its move.
+3. The result is displayed for both human and computer.
+4. The scores update automatically after each round.
+5. The game is fully responsive and works across different devices.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Installation
 
-### Analyzing the Bundle Size
+1. Clone the repository:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+git clone https://github.com/your-username/rock-paper-scissors.git
 
-### Making a Progressive Web App
+Navigate to the project folder:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+cd rock-paper-scissors
 
-### Advanced Configuration
+Install dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+npm install
 
-### Deployment
+Run the project locally:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+npm start
 
-### `npm run build` fails to minify
+Open http://localhost:3000 in your browser to play.
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# rock-paper-scissors-game
-A React-based Rock, Paper, Scissors game where the user plays against the computer. The app tracks scores, displays results instantly, and provides an interactive way to practice React, state management, and basic game logic.
->>>>>>> 9a098898fb4e5c373b5da0c835b5907ca26a5d50
+Author
+
+Eduardo Lulo – Portfolio
+
+This project demonstrates my abilities in React, JavaScript, and responsive frontend development, and serves as a showcase for potential employers in a junior frontend developer role.
